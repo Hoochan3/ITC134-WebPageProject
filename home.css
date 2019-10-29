@@ -12,8 +12,49 @@ header{
 }
 
 #wrapper{ 
-    width: 940px;
-    height: 600px;
+    width: 940px; 
+    height: 800px;
     background: green; 
-    margin: 0 auto;
+    margin: 0 auto; 
+    padding: 10px;
+    
+} 
+
+
+#info1{ 
+    width: 50%; 
+    height: 250px;
+    float: right;
+    background: blue;
+    margin-bottom: 10px;
+}
+
+#info2{
+    width: 50%; 
+    height: 250px;
+    background: grey;
+    float: left;
+    margin-bottom: 10px;
+} 
+
+#wrapper2{ 
+    width: 940px; 
+    height: 500px;
+    background: red; 
+    margin: 0 auto; 
+
+    
+} 
+
+.trip-boxes{ 
+    width: 30%; 
+    height: 200px; 
+    float: left;
+    background: grey;
+    margin-right:15px;
+    margin-left: 15px;
+} 
+
+.trip-boxes:nth-child(3){ 
+    float:right;
 }
