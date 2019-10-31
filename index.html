@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
 
 <!--Remy Sharp Shim --> 
@@ -11,7 +12,17 @@
 <![endif]-->
     
 <link href="home.css" type="text/css" rel="stylesheet">
-    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src="js/drop-down.js" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
+		</script>
 </head>
     
 
@@ -22,7 +33,64 @@
     <img src="images/logo1.png" alt="logo" id="logo">
     <h1 id="welcome">Journey Into The Tech Feild</h1>
 </header>
+<nav id= "primary">
+        <!--  START OF DROP DOWN CLICK -->
+       
+        <ul class="nav primary-nav">
+<li>
+<a href="home.html">
+  Home
+</a>
+</li>
+<li>
+<a href="about.html">
+  About
+</a>
 
+<li class="button-dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle">
+ Boot Camps <span>▼</span>
+</a>
+<ul class="dropdown-menu">
+  <li>
+    <a href="gallery.html">
+     Coding Dojo
+    </a>
+  </li>
+  <li>
+    <a href="http://webdesign120.space/homework9/menu.html">
+      General Assembly
+    </a>
+  </li>
+  <li>
+    <a href="http://webdesign120.space/homework9/menu.html">
+      Flatiron School
+    </a>
+  </li>
+</ul>
+</li>
+<li class="button-dropdown">
+<a href="javascript:void(0)" class="dropdown-toggle">
+  University of Washington<span>▼</span>
+</a>
+<ul class="dropdown-menu">
+  <li>
+    <a href="contacts.html">
+      Location
+    </a>
+  </li>
+  <li>
+        <a href="contacts.html">
+          Tuition
+        </a>
+      </li>
+</ul>
+</li>
+
+</ul>
+
+    </nav>
+                 
 
     <div id="wrapper">
         <h1 id="greeting">A quick and dirty guide into the world of Tech</h1>
@@ -134,6 +202,15 @@
             </ul>
         </aside>
     </div>
+    <div id="boxes">
+        <h2 id="other-camps">Other Boot Camps In Seattle</h2>
+            <main id="other-bootcamps">
+                <img id="other-camps" src="images/bootcamp1.jpg" alt="bootCamp1">
+                <img id="other-camps" src="images/bootcamp2.jpg" alt="bootCamp2">
+                <img id="other-camps" src="images/bootcamp3.jpg" alt="bootCamp3">
+                <img id="other-camps" src="images/bootcamp4.jpg" alt="bootCamp4">
+            </main>
+        </div>
 
 
 
@@ -151,6 +228,15 @@
   
     
     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/drop-down.js"></script>
+ 		<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
+		</script>
     
     
 </body>
